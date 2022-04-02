@@ -1,4 +1,7 @@
 @import 'vars';
+.header{
+  background-color: var(--primary-theme-color);
+}
 .header__banner-container{
     text-align: center;
     max-height: 4.3rem;
