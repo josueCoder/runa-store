@@ -1,14 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 import '@styles/Header.scss';
-
+import Menu from '@components/Menu';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_runa_sale.png';
-import shopingCart from '@icons/icon_shopping_cart.svg';
+import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 
 
 const Header=()=>{
+    const [toggle,setToggle]=useState(false);
+    const handleToggle=()=>{
+        setToggle(!toggle);
+    }
     return(
             <header className="header">
                 <div className='header__banner-container'>
@@ -44,13 +48,16 @@ const Header=()=>{
                     </div>
                     <div className="navbar-right">
                         <ul>
-                            <li className="navbar-right__email">runastore@gmail.com</li>
+                            <li className="navbar-right__email" onClick={handleToggle}>
+                                runastore@gmail.com
+                            </li>
                             <li className="navbar-right__shopping-cart">
-                            <img className='navbar-right__icon-shopping' src={shopingCart} alt="shopping cart"/>
+                            <img className='navbar-right__icon-shopping' src={shoppingCart} alt="shopping cart"/>
                             <div>2</div>
                             </li>
                         </ul>
                     </div>
+                    {toggle && <Menu/>}
                 </nav>
             </header>
 
