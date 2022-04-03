@@ -29,7 +29,7 @@
   .menu {
     display: none;
   }
-  .logo {
+  .nav-logo {
     width: 100px;
   }
   .navbar-left ul,
@@ -71,7 +71,7 @@
   .navbar-right__shopping-cart div {
     width: 16px;
     height: 16px;
-    background-color: var(--hospital-purple);
+    background-color: var(--yellow);
     border-radius: 50%;
     font-size: var(--sm);
     font-weight: bold;

@@ -1,6 +1,9 @@
 import React from 'react'
 import '../styles/Header.scss';
 
+
+
+
 const Header=()=>{
     return(
             <header className="header">
@@ -13,7 +16,7 @@ const Header=()=>{
                 <nav className='header-nav'>
                     <img src="" alt="menu" className="menu"/>
                     <div className="navbar-left">
-                        <img src=" " alt="logo" className="logo"/>
+                        <img src="" alt="logo" className="nav-logo"/>
                         <ul>
                             <li>
                                 <a href="/">Todo</a>
@@ -39,7 +42,7 @@ const Header=()=>{
                         <ul>
                             <li className="navbar-right__email">artesaner@example.com</li>
                             <li className="navbar-right__shopping-cart">
-                            <img className='navbar-right__icon-shopping' src="./icons/icon_shopping_cart.svg" alt="shopping cart"/>
+                            <img className='navbar-right__icon-shopping' src="" alt="shopping cart"/>
                             <div>2</div>
                             </li>
                         </ul>
