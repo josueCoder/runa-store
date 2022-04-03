@@ -1,13 +1,13 @@
 import React from 'react';
-import OrderItem from '../components/OrderItem';
-import '../styles/MyOrder.scss';
+import OrderItem from '@components/OrderItem';
+import '@styles/MyOrder.scss';
 
 const MyOrder = () => {
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
 				<img src="./icons/flechita.svg" alt="arrow" />
-				<p className="title">My order</p>
+				<p className="title">Mi Pedido</p>
 			</div>
 			<div className="my-order-content">
 				<OrderItem />
@@ -18,7 +18,7 @@ const MyOrder = () => {
 					<p>S/560.00</p>
 				</div>
 				<button className="primary-button">
-					Checkout
+					Verificar
 				</button>
 			</div>
 		</aside>

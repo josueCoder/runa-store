@@ -1,7 +1,7 @@
 import React from 'react';
-import OrderItem from '../components/OrderItem';
-import Menu from '../components/Menu';
-import '../styles/Checkout.scss';
+import OrderItem from '@components/OrderItem';
+import Menu from '@components/Menu';
+import '@styles/Checkout.scss';
 
 const Checkout = () => {
 	return (
@@ -12,7 +12,7 @@ const Checkout = () => {
 					<div className="order">
 						<p>
 							<span>03.25.22</span>
-							<span>6 articulod</span>
+							<span>6 articulos</span>
 						</p>
 						<p>s/ 560.00</p>
 					</div>

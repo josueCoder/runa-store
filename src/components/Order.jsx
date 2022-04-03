@@ -1,14 +1,14 @@
 import React from 'react'
-import '../styles/Order.scss';
+import '@styles/Order.scss';
 
 const Order=()=>{
     return(
         <div className="Order">
 			<p>
-				<span>03.25.21</span>
-				<span>6 articles</span>
+				<span>03.25.22</span>
+				<span>6 articulos</span>
 			</p>
-			<p>$560.00</p>
+			<p>s/ 560.00</p>
 			<img src="./icons/flechita.svg" alt="arrow" />
 		</div>
 
