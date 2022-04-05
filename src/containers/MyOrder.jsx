@@ -7,6 +7,11 @@ import  flechita from'@icons/flechita.svg';
 
 const MyOrder = () => {
 	const {state}=useContext(AppContext);
+	const sumaTotal=()=>{
+		const reducer=(accumalator,currentValue)=>accumalator+currentValue.price;
+		const suma=state.cart.reduce(reducer,0);
+		return suma;
+	}
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
@@ -22,7 +27,7 @@ const MyOrder = () => {
 					<p>
 						<span>Total</span>
 					</p>
-					<p>S/560.00</p>
+					<p>s/.{sumaTotal()}</p>
 				</div>
 				<button className="primary-button">
 					Verificar
