@@ -22,36 +22,34 @@ const Header=()=>{
                 <div className='header__banner-container'>
                     <h3 className='header__banner'>DELIVERY GRATIS DESDE S/. 100</h3>
                 </div>
-                <div>
-
-                </div>
+                
                 <nav className='header-nav'>
-                    <img src={menu} alt="menu" className="menu"/>
+                    <img src={menu} alt="menu" className="header-nav__menu"/>
                     <div className="navbar-left">
-                        <img src={logo} alt="logo" className="nav-logo"/>
-                        <ul>
-                            <li>
-                                <a href="/">Todo</a>
+                        <img src={logo} alt="logo" className="nav-left__logo"/>
+                        <ul className='navbar-left__menu-container'>
+                            <li className='navbar-left__menu-item'>
+                                <a className='navbar-left__menu-item-link' href="/">Todo</a>
                             </li>
-                            <li>
-                                <a href="/">Productos</a>
+                            <li className='navbar-left__menu-item'>
+                                <a className='navbar-left__menu-item-link' href="/">Productos</a>
                             </li>
-                            <li>
-                                <a href="/">Marcas</a>
+                            <li className='navbar-left__menu-item'>
+                                <a className='navbar-left__menu-item-link' href="/">Marcas</a>
                             </li>
-                            <li>
-                                <a href="/">Reviews</a>
+                            <li className='navbar-left__menu-item'>
+                                <a className='navbar-left__menu-item-link' href="/">Reviews</a>
                             </li>
-                            <li>
-                                <a href="/">Nosotros</a>
+                            <li className='navbar-left__menu-item'>
+                                <a className='navbar-left__menu-item-link' href="/">Nosotros</a>
                             </li>
-                            <li>
-                                <a href="/">Otros</a>
+                            <li className='navbar-left__menu-item'>
+                                <a className='navbar-left__menu-item-link' href="/">Otros</a>
                             </li>
                         </ul>
                     </div>
                     <div className="navbar-right">
-                        <ul>
+                        <ul className='navbar-right__menu-container'>
                             <li className="navbar-right__email" onClick={handleToggle}>
                                 runastore@gmail.com
                             </li>
