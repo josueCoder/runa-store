@@ -33,7 +33,7 @@ const Header=()=>{
                                 <NavLink className='navbar-left__menu-item-link' to="/">Todo</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <NavLink className='navbar-left__menu-item-link' to="/">Productos</NavLink>
+                                <NavLink className='navbar-left__menu-item-link' to="/productos">Productos</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
                                 <NavLink className='navbar-left__menu-item-link' to="/">Marcas</NavLink>
@@ -42,7 +42,7 @@ const Header=()=>{
                                 <NavLink className='navbar-left__menu-item-link' to="/">Reviews</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <NavLink className='navbar-left__menu-item-link' to="/">Nosotros</NavLink>
+                                <NavLink className='navbar-left__menu-item-link' to="/nosotros">Nosotros</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
                                 <NavLink className='navbar-left__menu-item-link' to="/">Otros</NavLink>

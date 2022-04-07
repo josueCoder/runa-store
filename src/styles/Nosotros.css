@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+.nosotros{
+    max-width: 100%;
+    color: black;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    margin: auto;
+    background-size: cover;
+    font-family: 'Zen Loop', cursive;
+    color: black;
+}
+.nosotros-container{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    gap: 2rem;
+}
+.nosotros-title{
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+
+}
+.nosotros-subtitle{
+    margin: 0;
+    letter-spacing: 0.1rem;
+}
+.nosotros-about{
+    margin: 0;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    color: rgb(77, 76, 76);
+    font-weight: 700;
+}
+.staff{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1800px;
+    
+
+}
+.staff__container-title{
+
+}
+.staff__title{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    letter-spacing: 0.5rem;
+
+}
+.staff__all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.staff__article{
+    transition: all 1s;
+}
+
+.staff__article:hover .staff__container{
+    transform: perspective(50rem) rotateY(180deg);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: black;
+    border-radius: 50%;
+}
+.staff__article:hover .staff__container .staff__img-container{
+    filter: blur(0.1rem);
+    filter: grayscale(1);
+    opacity: 0.2;
+    transition: all 1.5s;
+}
+
+.staff__container{
+    position: relative;
+    transition: all ease 1.5s;
+    transform-style: preserve-3d;
+    transform: perspective(50rem) rotateY(0deg); 
+    
+}
+.staff__img-container{
+    width: 8rem;
+    height: 8rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 1.5s;
+    border-radius: 50%;
+}
+.staff__img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+.staff__info-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 0.5rem;
+    position: absolute;
+    top: 0;
+    height: 88%;
+    padding: 0.5rem 0.5rem;
+    transform: perspective(50rem) rotateY(180deg);
+    backface-visibility: hidden;
+    color: white;
+    
+}
+.staff__info-title{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Zen Loop', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.staff-info-about{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Loop', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    
+}
+.staff__article-description{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.7rem auto;
+    letter-spacing: 0.2rem;
+    background-color: rgba(146, 146, 146, 0.583);
+    color: white;
+}
+
+@media ( min-width: 700px) {
+
+    .nosotros-container{
+        padding: 0 7rem;
+        padding-top: 6rem;
+    }
+
+    .section-artistas{
+        max-width: 1800px;
+        flex-wrap: nowrap;
+    }
+
+    .section-artists__info-title{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;        
+    }
+    .section-artists-info-about{
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+    }
+    .nosotros-title{
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .nosotros-subtitle{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .nosotros-about{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .staff__all{
+        gap: 1rem
+    }
+
+
+
+}
