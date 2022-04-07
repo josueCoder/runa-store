@@ -7,6 +7,7 @@ import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_runa_sale.png';
 import AppContex from '../context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -29,22 +30,22 @@ const Header=()=>{
                         <img src={logo} alt="logo" className="nav-left__logo"/>
                         <ul className='navbar-left__menu-container'>
                             <li className='navbar-left__menu-item'>
-                                <a className='navbar-left__menu-item-link' href="/">Todo</a>
+                                <NavLink className='navbar-left__menu-item-link' to="/">Todo</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <a className='navbar-left__menu-item-link' href="/">Productos</a>
+                                <NavLink className='navbar-left__menu-item-link' to="/">Productos</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <a className='navbar-left__menu-item-link' href="/">Marcas</a>
+                                <NavLink className='navbar-left__menu-item-link' to="/">Marcas</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <a className='navbar-left__menu-item-link' href="/">Reviews</a>
+                                <NavLink className='navbar-left__menu-item-link' to="/">Reviews</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <a className='navbar-left__menu-item-link' href="/">Nosotros</a>
+                                <NavLink className='navbar-left__menu-item-link' to="/">Nosotros</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <a className='navbar-left__menu-item-link' href="/">Otros</a>
+                                <NavLink className='navbar-left__menu-item-link' to="/">Otros</NavLink>
                             </li>
                         </ul>
                     </div>
