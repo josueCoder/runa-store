@@ -3,43 +3,43 @@ import '../styles/MobileMenu.scss';
 
 const MobileMenu = () => {
     return (
-        <div class="mobile-menu">
-            <ul>
-                <li>
+        <div className="mobile-menu">
+            <ul className='mobile-menu__menu-container' >
+                <li className='mobile-menu__menu-item'>
                     <p>Todo</p>
                 </li>
-                <li>
-                    <a href="/">Productos</a>
+                <li className='mobile-menu__menu-item'>
+                    <a className='mobile-menu__menu__link' href="/">Productos</a>
                 </li>
-                <li>
-                    <a href="/">Marcas</a>
+                <li className='mobile-menu__menu-item'>
+                    <a className='mobile-menu__menu__link' href="/">Marcas</a>
                 </li>
-                <li>
-                    <a href="/">Reviews</a>
+                <li className='mobile-menu__menu-item'>
+                    <a className='mobile-menu__menu__link' href="/">Reviews</a>
                 </li>
-                <li>
-                    <a href="/">Nosotros</a>
+                <li className='mobile-menu__menu-item'>
+                    <a className='mobile-menu__menu__link' href="/">Nosotros</a>
                 </li>
                 
-                <li>
-                    <a href="/">Otros</a>
+                <li className='mobile-menu__menu-item'>
+                    <a className='mobile-menu__menu__link' href="/">Otros</a>
                 </li>
                 </ul>
 
                 <ul>
-                <li>
-                    <a href="/account">Mi Cuenta</a>
+                <li className='mobile-menu__menu-item'>
+                    <a className='mobile-menu__menu__link' href="/account">Mi Cuenta</a>
                 </li>
                 </ul>
 
-                <ul>
-                <li>
-                    <a href="/account" class="email">runastore@gmail.com</a>
-                </li>
-                <li>
-                    <a href="/signup" class="sign-out">cerrar sesion</a>
-                </li>
-            </ul>
+                <ul className='mobile-menu__menu-close-container'>
+                    <li className='mobile-menu-close__menu-item'>
+                        <a className='mobile-menu-close__menu__link--email' href="/account" >runastore@gmail.com</a>
+                    </li>
+                    <li className='mobile-menu-close__menu-item'>
+                        <a className='mobile-men-close__menu__link' href="/signup" >cerrar sesion</a>
+                    </li>
+                </ul>
         </div>
     );
 }

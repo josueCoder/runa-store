@@ -3,20 +3,20 @@
 .mobile-menu {
     padding: 24px;
 	position: fixed;
-	top: 60px;
+	top: 46px;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: #ffffff;
+	background-color: var(--white);
 	border: 1px solid var(--very-light-pink);
-	border-radius: 6px;
+	
 	animation: swipeDown 0.26s ease;
 }
-.mobile-menu a {
+.mobile-menu__menu__link {
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
-    /* margin-bottom: 24px; */
+    
 }
 .mobile-menu ul {
     padding: 0;
@@ -31,13 +31,16 @@
 	list-style: none;
 
 }
-.email {
+.mobile-menu-close__menu__link--email {
     font-size: var(--sm);
-    font-weight: 300 !important;
+    font-weight: 300 ;
+	text-decoration: none;
 }
-.sign-out {
-    font-size: var(--sm);
-    color: var(--hospital-green) !important;
+.mobile-men-close__menu__link {
+    font-size: 1.2rem;
+	text-decoration: none;
+    color: var(--primary-theme-color);
+	font-weight: 700;
 }
 @keyframes swipeDown {
 	0% {
