@@ -9,10 +9,8 @@ import Nosotros from '../components/Nosotros';
 import Reviews from '../components/Reviews';
 
 const Home = () => {
-
     return (
         <>
-
             <Splide aria-label="My Favorite Images">
                 <SplideSlide>
                     <img src={SliderOne} alt="Image 1"/>
@@ -28,8 +26,6 @@ const Home = () => {
             <Nosotros/>
             <Reviews/>
         </>
-
     );
 }
-
 export default Home;
