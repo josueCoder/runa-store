@@ -45,11 +45,11 @@ module.exports = {
             {
                 test: /\.(css|scss)$/,
                 use: [
-                  // Creates `style` nodes from JS strings
+                 
                   "style-loader",
-                  // Translates CSS into CommonJS
+                 
                   "css-loader",
-                  // Compiles Sass to CSS
+                  
                   "sass-loader",
                 ],
          },
@@ -60,22 +60,22 @@ module.exports = {
         ]
     },
     plugins: [ // plugins 
-        new HtmlWebpackPlugin({ // instanciamos el plugin para html 
-            template: './public/index.html', // archivo raíz a transformar
-            filename: './index.html' // el archivo resultante
+        new HtmlWebpackPlugin({ 
+            template: './public/index.html', 
+            filename: './index.html' 
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
     ],
     devServer: {
-        static: {
-          directory: path.join(__dirname, 'public'),
-        },
-        compress: true,
-        port: 3005,
-
-        historyApiFallback:true,
-    },
+        
+            allowedHosts: path.join(__dirname, 'build'),
+            historyApiFallback: true,
+            compress: true,
+            port: 3005,
+            open: true,
+       
+    }
     
 }
