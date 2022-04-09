@@ -60,7 +60,7 @@ const Header=()=>{
                                 <NavLink className='navbar-left__menu-item-link' to="/">Marcas</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
-                                <NavLink className='navbar-left__menu-item-link' to="/">Reviews</NavLink>
+                                <NavLink className='navbar-left__menu-item-link' to="/reviews">Reviews</NavLink>
                             </li>
                             <li className='navbar-left__menu-item'>
                                 <NavLink className='navbar-left__menu-item-link' to="/nosotros">Nosotros</NavLink>

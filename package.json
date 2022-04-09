@@ -23,15 +23,9 @@
     "babel-loader": "^8.2.4",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
-<<<<<<< HEAD
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
-=======
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "react-router-dom": "^6.2.2",
->>>>>>> 268e3a23fc31c32b63e589ef2a27c65c53024112
     "sass-loader": "^12.6.0",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",

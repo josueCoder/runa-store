@@ -14,6 +14,9 @@ import NotFound from '../pages/NotFound';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 import '../styles/global.css';
+import Reviews from '../components/Reviews';
+import Nosotros from '../components/Nosotros';
+import ProductList from '../containers/ProductList';
 
 const App = () => {
     const initialState = useInitialState();
@@ -23,11 +26,7 @@ const App = () => {
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                        <Route
-                            exact
-                            path="/"
-                            element={<Home/>}
-                        />
+                        
                         <Route
                             exact
                             path="login"
@@ -68,9 +67,29 @@ const App = () => {
                             path="/orders"
                             element={<Orders/>}
                         /> */}
+                         <Route
+                            exact
+                            path="/nosotros"
+                            element={<Nosotros/>}
+                        />
+                        <Route
+                            exact
+                            path="/productos"
+                            element={<ProductList/>}
+                        />
+                        <Route
+                            exact
+                            path="/reviews"
+                            element={<Reviews/>}
+                        />
                         <Route
                             path="*"
                             element={<NotFound/>}
+                        />
+                        <Route
+                            exact
+                            path="/"
+                            element={<Home/>}
                         />
                     </Routes>
                 </Layout>

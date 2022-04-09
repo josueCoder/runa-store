@@ -10,6 +10,8 @@ const Home=()=>{
         <>
      
         <ProductList/>
+        <Nosotros/>
+        <Reviews/>
         </>
     );
 }
