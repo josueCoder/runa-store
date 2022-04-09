@@ -1,8 +1,8 @@
 import React,{useState,useContext} from 'react';
 import '@styles/Header.scss';
 import Menu from '@components/Menu';
-import MobileMenu from './MobileMenu';
-import AppContext from '../context/AppContext';
+import MobileMenu from '@components/MobileMenu';
+import AppContext from '@context/AppContext';
 import MyOrder from '@containers/MyOrder';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_runa_sale.png';
@@ -45,7 +45,9 @@ const Header=()=>{
                     onClick={handleClickMobile}
                     />
                     <div className="navbar-left">
-                        <img src={logo} alt="logo" className="nav-left__logo"/>
+                        <figure className='nav-left__logo-container'>
+                            <img src={logo} alt="logo" className="nav-left__logo"/>
+                        </figure>
                         <ul className='navbar-left__menu-container'>
                             <li className='navbar-left__menu-item'>
                                 <a className='navbar-left__menu-item-link' href="/">Todo</a>
