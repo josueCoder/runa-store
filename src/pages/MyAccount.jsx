@@ -5,17 +5,17 @@ const MyAccount = () => {
 	return (
 		<div className="MyAccount">
 			<div className="MyAccount-container">
-				<h1 className="title">Mi Cuenta</h1>
-				<form action="/" className="form">
+				<h1 className="my-account__title">Mi Cuenta</h1>
+				<form action="/" className="my-account__form">
 					<div>
-						<label for="name" className="label">Nombre</label>
+						<label for="name" className="my-account__form-label">Nombre</label>
 						<p className="value">Mary  Escalante</p>
-						<label for="email" className="label">Correo</label>
+						<label for="email" className="my-account__form-label">Correo</label>
 						<p className="value">escalante23@gmail.com</p>
-						<label for="password" className="label">Contraseña</label>
+						<label for="password" className="my-account__form-label">Contraseña</label>
 						<p className="value">*********</p>
 					</div>
-					<input type="submit" value="Edit" className="secondary-button login-button" />
+					<input type="submit" value="Editar" className="my-account__form-button login-button" />
 				</form>
 			</div>
 		</div>

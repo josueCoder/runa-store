@@ -4,14 +4,12 @@ const Menu=()=>{
     return(
         <div className="Menu">
             <ul>
+                
                 <li>
-                    <a href="/" className="title">Mis Ordenes</a>
+                    <a href="/account">Mi Cuenta</a>
                 </li>
                 <li>
-                    <a href="/">Mi Cuenta</a>
-                </li>
-                <li>
-                    <a href="/">Cerrar Sesion</a>
+                    <a href="/signup">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>
