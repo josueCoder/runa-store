@@ -14,7 +14,10 @@ import Orders from '../pages/Orders';
 import NotFound from '../pages/NotFound';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
+import Nosotros from '../components/Nosotros';
 import '@styles/global.css';
+import ProductLists from '../containers/ProductList';
+import Header from '@components/Header';
 const App = () =>{
     const initialState=useInitialState();
     return(
@@ -23,7 +26,9 @@ const App = () =>{
                 <Layout>
 
                     <Routes>
-                        <Route  path='/' element={<Home/>}/>
+                        <Route  path='/' element={<><Header/><Home/></>}/>
+                        <Route  path='/nosotros' element={<><Header/><Nosotros/></>}/>
+                        <Route  path='/productos' element={<><Header/><ProductLists/></>}/>
                         <Route  path='/login' element={<Login/>}/>
                         {/* <Route  path='/recovery-password' element={<RecoveryPassword/>}/> */}
                         <Route  path='/password-recovery' element={<PasswordRecovery/>}/>
